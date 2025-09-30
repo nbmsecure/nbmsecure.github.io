@@ -26,7 +26,7 @@
     <div style="border: solid 3px #ddd; border-radius:1rem; display:flex; flex-flow: column; align-items:center; justify-content: center; padding:0 1.5rem">
         <img src="./noel.jpg" width="230px" height="235px" style="margin:2rem; border-radius:50%;"/><h1 style="text-align:center">NBMSECURE.com is about to be launched, Mr. Noel B!</h1>
       <div class="countdown">
-      <div><span id="days">00</span><div class="label">Days</div></div>
+      
       <div><span id="hours">00</span><div class="label">Hours</div></div>
       <div><span id="minutes">00</span><div class="label">Minutes</div></div>
       <div><span id="seconds">00</span><div class="label">Seconds</div></div>
@@ -35,7 +35,7 @@
 
     <script>
   const targetDate = new Date("2025-12-31T23:59:59").getTime();
-  const daysEl = document.getElementById("days");
+  
   const hoursEl = document.getElementById("hours");
   const minutesEl = document.getElementById("minutes");
   const secondsEl = document.getElementById("seconds");
@@ -45,19 +45,19 @@
     const distance = targetDate - now;
 
     if (distance <= 0) {
-      daysEl.textContent = "00";
+      
       hoursEl.textContent = "00";
       minutesEl.textContent = "00";
       secondsEl.textContent = "00";
       return; // Stop updating
     }
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    daysEl.textContent = String(days).padStart(2, '0');
+    
     hoursEl.textContent = String(hours).padStart(2, '0');
     minutesEl.textContent = String(minutes).padStart(2, '0');
     secondsEl.textContent = String(seconds).padStart(2, '0');
@@ -70,6 +70,7 @@
 
 </body>
 </html>
+
 
 
 
