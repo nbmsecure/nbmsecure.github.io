@@ -12,6 +12,9 @@
         max-width:320px;
     }
     .countdown div {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
       font-size: 32px;
       font-weight: bold;
       color: #0077cc;
@@ -25,11 +28,10 @@
 <body style="font-family: sans-serif; margin:0; padding:0; height:100vh; width: 100%; display:flex; justify-content: center; align-items: center; ">
     <div style="border: solid 3px #ddd; border-radius:1rem; display:flex; flex-flow: column; align-items:center; justify-content: center; padding:0 1.5rem">
         <img src="./noel.jpg" width="230px" height="235px" style="margin:2rem; border-radius:50%;"/><h1 style="text-align:center">NBMSECURE.com is about to be launched, Mr. Noel B!</h1>
-      <div class="countdown">
-      
-      <div><span id="hours">00</span><div class="label">Hours</div></div>
-      <div><span id="minutes">00</span><div class="label">Minutes</div></div>
-      <div><span id="seconds">00</span><div class="label">Seconds</div></div>
+      <div class="countdown">      
+      <div><span id="hours">00</span><small class="label">Hours</small></div>
+      <div><span id="minutes">00</span><small class="label">Minutes</small></div>
+      <div><span id="seconds">00</span><small class="label">Seconds</small></div>
     </div>
     </div>    
 
@@ -70,6 +72,7 @@
 
 </body>
 </html>
+
 
 
 
