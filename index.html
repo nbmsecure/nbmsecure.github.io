@@ -29,7 +29,7 @@
     <div style="border: solid 3px #ddd; border-radius:1rem; display:flex; flex-flow: column; align-items:center; justify-content: center; padding:1.5rem; max-width:320px">
         <img src="./noel.jpg" width="230px" height="235px" style="margin:2rem; border-radius:50%;"/><h1 style="text-align:center">NBMSECURE.com will be launched in:</h1>
       <div class="countdown"> 
-          <div><span id="days">00</span><small class="label">Days</small></div>
+        <div><span id="days">00</span><small class="label">Days</small></div>
       <div><span id="hours">00</span><small class="label">Hours</small></div>
       <div><span id="minutes">00</span><small class="label">Minutes</small></div>
       <div><span id="seconds">00</span><small class="label">Seconds</small></div>
@@ -39,7 +39,7 @@
     <script>
   const targetDate = new Date("2025-12-31T23:59:59").getTime();
         
- const daysEl = document.getElementById("hours");  
+ const daysEl = document.getElementById("days");  
   const hoursEl = document.getElementById("hours");
   const minutesEl = document.getElementById("minutes");
   const secondsEl = document.getElementById("seconds");
@@ -57,7 +57,7 @@
     }
 
     
-    const days = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const days = Math.floor((distance % (1000 * 60 *60 * 60 * 24)) / (1000 * 60 * 60 * 60));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
@@ -75,6 +75,7 @@
 
 </body>
 </html>
+
 
 
 
